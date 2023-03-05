@@ -10,8 +10,8 @@ def remove_unused_columns(data_loaded,list_of_accounting_columns_to_include):
     
     list_of_accounting_columns_to_remove = [i for i in list_of_all_accounting_columns if i not in list_of_accounting_columns_to_include]
 
-    for i in list_of_accounting_columns_to_remove:
-        del data_loaded[i]
+    # Removing columns from data
+    data_loaded.drop(list_of_accounting_columns_to_remove, axis=1, inplace=True)
 
     return data_loaded
 
