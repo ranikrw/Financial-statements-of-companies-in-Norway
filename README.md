@@ -1,3 +1,5 @@
+# Financial statements of companies in Norway
+
 This repository provides examples of how to handle the data described in:
 
 Wahlstrøm, Ranik Raaen (2022). Financial statements of companies in Norway. arXiv:2203.12842. DOI: 10.48550/arXiv.2203.12842 URL: https://doi.org/10.48550/arXiv.2203.12842
