@@ -1,5 +1,5 @@
-# Financial statements of companies in Norway
 This repository provides examples of how to handle the data described in:
+
 Wahlstrøm, Ranik Raaen (2022). Financial statements of companies in Norway. arXiv:2203.12842. DOI: 10.48550/arXiv.2203.12842 URL: https://doi.org/10.48550/arXiv.2203.12842
 
 The code in the file "main.py" loads the data, performs data filtering, prepares accounting variables, winsorizes the data, and provides an example of bankruptcy prediction. Functions used in "main.py" are found in the files in the folder "functions".
@@ -15,3 +15,6 @@ Altman, Edward I., and Gabriele Sabato. 2007. “Modelling Credit Risk for SMEs:
 
 Altman, Edward I. 1968. “Financial Ratios, Discriminant Analysis and the Prediction of Corporate Bankruptcy.” The Journal of Finance 23 (4): 589–609. https://doi.org/10.2307/2978933
 
+
+<br/><br/>
+**Permanent link to this repository:** https://FinancialStatementsNorway.ranik.no/
