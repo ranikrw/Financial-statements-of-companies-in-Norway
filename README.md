@@ -19,4 +19,4 @@ Altman, Edward I. 1968. “Financial Ratios, Discriminant Analysis and the Predi
 
 
 <br/><br/>
-**Permanent link to this repository:** https://FinancialStatementsNorway.ranik.no/
+**Permanent link to the content in this repository:** https://FinancialStatementsNorway.ranik.no/
