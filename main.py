@@ -98,8 +98,8 @@ if len(temp)==1:
 else:
     print('ERROR: not all orgnr unique')
 
-# Considering only accountint year 2020 or earlier
-data = data[data.regnaar<=2020]
+# Considering only accountint year 2021 or earlier
+data = data[data.regnaar<=2021]
 data = data.reset_index(drop=True) # Reset index
 
 ##################################################################
