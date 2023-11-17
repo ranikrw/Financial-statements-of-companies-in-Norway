@@ -17,6 +17,11 @@ Altman, Edward I., and Gabriele Sabato. 2007. “Modelling Credit Risk for SMEs:
 
 Altman, Edward I. 1968. “Financial Ratios, Discriminant Analysis and the Prediction of Corporate Bankruptcy.” The Journal of Finance 23 (4): 589–609. https://doi.org/10.2307/2978933
 
+## Other resorces
+The following study utilizes the same dataset and also provides access to all associated code:
+
+Wahlstrøm, R. R. (2023). Explainable Artificial Intelligence (xAI) for Interpreting Machine Learning Methods and Their Individual Predictions. Working Paper. https://doi.org/10.2139/ssrn.4321303
+
 
 <br/><br/>
 **Permanent link to the content in this repository:** https://FinancialStatementsNorway.ranik.no/
