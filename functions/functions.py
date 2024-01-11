@@ -9,18 +9,7 @@ def make_ratio(numerator,denumerator):
     # If the numerator is positive or negative, we set the ratio to infinity or negative infinity, respectively.
     # Infinity or negative infinity is later set to the 1st and 99th, respectively,
     # percentiles of the distribution of the ratio during the winsorizing.
-    ratio = [None]*len(numerator)
-    for i in range(len(numerator)):
-        if denumerator[i]!=0:
-            ratio[i] = numerator[i] / denumerator[i]
-        else: #denumerator[i]==0:
-            if numerator[i]>0:
-                ratio[i] = np.inf
-            elif numerator[i]<0:
-                ratio[i] = -np.inf
-            else: # numerator[i]==0:
-                ratio[i] = 0
-    return pd.Series(ratio)
+    return numerator.div(denumerator).fillna(0)
 
 
 def prepare_training_and_test_data(data_train,data_test,input_variables,response_variable):

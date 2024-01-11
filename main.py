@@ -147,14 +147,7 @@ data = data.reset_index(drop=True) # Reset index
 # sometimes 'Sum bankinnskudd, kontanter og lignende' needs to be used instead
 string1 = 'Bankinnskudd, kontanter og lignende'
 string2 = 'Sum bankinnskudd, kontanter og lignende'
-bankinnskudd_kontanter_og_lignende = pd.Series([None]*data.shape[0])
-for i in tqdm(range(data.shape[0])):
-    if pd.isnull(data[string1].iloc[i])==False:
-        bankinnskudd_kontanter_og_lignende[i] = data[string1].iloc[i]
-    elif pd.isnull(data[string2].iloc[i])==False:
-        bankinnskudd_kontanter_og_lignende[i] = data[string2].iloc[i]
-    else: # if both is 'None'
-        bankinnskudd_kontanter_og_lignende[i] = np.double(0)
+bankinnskudd_kontanter_og_lignende = data[string1].fillna(data[string2]).fillna(0)
         
 skyldige_offentlige_avgifter            = data['Skyldige offentlige avgifter'].fillna(0)
 leverandorgjeld                         = data['Leverandoergjeld'].fillna(0)
