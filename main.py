@@ -83,8 +83,9 @@ for current_file in files:
 
     # Adding all data together into data
     if current_file == files[0]:
-        data = pd.DataFrame(columns=data_loaded.columns)
-    data = pd.concat([data,data_loaded])
+        data = data_loaded.copy()
+    else:
+        data = pd.concat([data,data_loaded])
     print('Imported for accounting year {}'.format(file_year))
 
 # Reset index 
