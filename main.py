@@ -269,7 +269,7 @@ for regnaar in tqdm(data['regnaar'].unique()):
         
         # Setting inf and -inf to maximum and minimum, respectively, values
         ratio = ratio.replace(np.inf,np.max(ratio[ratio != np.inf]))
-        ratio = ratio.replace(-np.inf,np.max(ratio[ratio != -np.inf]))
+        ratio = ratio.replace(-np.inf,np.min(ratio[ratio != -np.inf]))
 
         lower = ratio.quantile(interval_winsorizing_ratios[0])
         upper = ratio.quantile(interval_winsorizing_ratios[1])
